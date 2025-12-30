@@ -445,15 +445,24 @@ body {
     text-decoration: line-through;
 }
 
+.product-image {
+    position: relative;
+}
+
 .product-discount {
-    display: inline-block;
-    background: #FF6B6B;
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.85rem;
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    background: #F28B82;
+    color: #fff;
+    padding: 4px 14px 4px 10px;
+    border-radius: 16px 0 0 16px;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.09);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 5;
 }
 
 .btn-buy {
