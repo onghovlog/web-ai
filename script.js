@@ -1,3 +1,52 @@
+// Mobile Menu Toggle
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const nav = document.querySelector('.nav');
+const menuOverlay = document.querySelector('.menu-overlay');
+
+if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', () => {
+        const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+        mobileMenuToggle.setAttribute('aria-expanded', !isExpanded);
+        nav.classList.toggle('active');
+        if (menuOverlay) menuOverlay.classList.toggle('active', !isExpanded);
+        document.body.classList.toggle('menu-open', !isExpanded);
+    });
+}
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            nav.classList.remove('active');
+            if (menuOverlay) menuOverlay.classList.remove('active');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
+        }
+    });
+});
+
+// Close mobile menu when clicking on overlay
+if (menuOverlay) {
+    menuOverlay.addEventListener('click', () => {
+        if (window.innerWidth <= 768 && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
+        }
+    });
+}
+
+// Handle window resize
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        nav.classList.remove('active');
+        if (menuOverlay) menuOverlay.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+    }
+});
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
