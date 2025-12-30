@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoa Việt - Hoa Tươi Cao Cấp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Hoa Việt</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#home">Trang chủ</a>
+                    <a href="#products">Sản phẩm</a>
+                    <a href="#themes">Chủ đề</a>
+                    <a href="#about">Về chúng tôi</a>
+                    <a href="#contact">Liên hệ</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn" aria-label="Tìm kiếm">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="cart-btn" aria-label="Giỏ hàng">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section - Bento Grid -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="bento-grid">
+                <div class="bento-item bento-large">
+                    <div class="bento-content">
+                        <h2 class="hero-title">Hoa Tươi Cao Cấp</h2>
+                        <p class="hero-subtitle">Trao gửi yêu thương qua từng cánh hoa</p>
+                        <button class="btn-primary">Khám phá ngay</button>
+                    </div>
+                    <div class="bento-image" style="background-image: url('https://images.unsplash.com/photo-1518895949257-8f4a6dc2974b?w=800')"></div>
+                </div>
+                <div class="bento-item bento-medium">
+                    <div class="bento-content">
+                        <h3>Hoa Sinh Nhật</h3>
+                        <p>Bó hoa tươi thắm cho ngày đặc biệt</p>
+                        <span class="bento-link">Xem thêm →</span>
+                    </div>
+                    <div class="bento-image" style="background-image: url('https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=600')"></div>
+                </div>
+                <div class="bento-item bento-small">
+                    <div class="bento-content">
+                        <h4>Hoa Khai Trương</h4>
+                        <span class="bento-link">Xem thêm →</span>
+                    </div>
+                    <div class="bento-image" style="background-image: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400')"></div>
+                </div>
+                <div class="bento-item bento-small">
+                    <div class="bento-content">
+                        <h4>Hoa Tình Yêu</h4>
+                        <span class="bento-link">Xem thêm →</span>
+                    </div>
+                    <div class="bento-image" style="background-image: url('https://images.unsplash.com/photo-1520763185298-1b434c919a48?w=400')"></div>
+                </div>
+                <div class="bento-item bento-medium">
+                    <div class="bento-content">
+                        <h3>Hoa Chúc Mừng</h3>
+                        <p>Gửi lời chúc tốt đẹp nhất</p>
+                        <span class="bento-link">Xem thêm →</span>
+                    </div>
+                    <div class="bento-image" style="background-image: url('https://images.unsplash.com/photo-1563241527-3004b6d01c85?w=600')"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sản Phẩm Mới</h2>
+                <a href="#" class="view-all">Xem tất cả →</a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge new">Mới</div>
+                    <div class="product-image" style="position:relative;">
+                        <img src="https://images.unsplash.com/photo-1563241527-3004b6d01c85?w=400" alt="Bó hoa hồng đỏ">
+                        <div class="product-discount product-discount-red" style="position:absolute; right:0; bottom:8px; background:#F28B82; color:#fff; padding:4px 14px 4px 10px; border-radius:16px 0 0 16px; font-size:1rem; font-weight:600; box-shadow:0 1px 5px rgba(0,0,0,0.09); border-top-right-radius:0; border-bottom-right-radius:0;">-25%</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bó Hoa Hồng Đỏ Tình Yêu</h3>
+                        <div class="product-price">
+                            <span class="current-price">899.000đ</span>
+                            <span class="old-price">1.200.000đ</span>
+                        </div>
+                        <button class="btn-buy">Mua ngay</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge new">Mới</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1518895949257-8f4a6dc2974b?w=400" alt="Bó hoa cẩm chướng">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bó Hoa Cẩm Chướng Hồng</h3>
+                        <div class="product-price">
+                            <span class="current-price">650.000đ</span>
+                        </div>
+                        <button class="btn-buy">Mua ngay</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge new">Mới</div>
+                    <div class="product-image" style="position:relative;">
+                        <img src="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=400" alt="Bó hoa tulip">
+                        <div class="product-discount product-discount-red" style="position:absolute; right:0; bottom:8px; background:#F28B82; color:#fff; padding:4px 14px 4px 10px; border-radius:16px 0 0 16px; font-size:1rem; font-weight:600; box-shadow:0 1px 5px rgba(0,0,0,0.09); border-top-right-radius:0; border-bottom-right-radius:0;">-21%</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bó Hoa Tulip Vàng</h3>
+                        <div class="product-price">
+                            <span class="current-price">750.000đ</span>
+                            <span class="old-price">950.000đ</span>
+                        </div>
+                        <button class="btn-buy">Mua ngay</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge new">Mới</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1520763185298-1b434c919a48?w=400" alt="Bó hoa ly">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bó Hoa Ly Trắng</h3>
+                        <div class="product-price">
+                            <span class="current-price">1.050.000đ</span>
+                        </div>
+                        <button class="btn-buy">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="products-section bestsellers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bán Chạy Nhất</h2>
+                <a href="#" class="view-all">Xem tất cả →</a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge bestseller">Bán chạy</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400" alt="Bó hoa hồng phấn">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bó Hoa Hồng Phấn</h3>
+                        <div class="product-price">
+                            <span class="current-price">850.000đ</span>
+                            <span class="old-price">1.100.000đ</span>
+                        </div>
+                        <div class="product-discount">-23%</div>
+                        <button class="btn-buy">Mua ngay</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge bestseller">Bán chạy</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1563241527-3004b6d01c85?w=400" alt="Bó hoa hướng dương">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bó Hoa Hướng Dương</h3>
+                        <div class="product-price">
+                            <span class="current-price">700.000đ</span>
+                        </div>
+                        <button class="btn-buy">Mua ngay</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge bestseller">Bán chạy</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1518895949257-8f4a6dc2974b?w=400" alt="Bó hoa cẩm tú cầu">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bó Hoa Cẩm Tú Cầu</h3>
+                        <div class="product-price">
+                            <span class="current-price">950.000đ</span>
+                            <span class="old-price">1.250.000đ</span>
+                        </div>
+                        <div class="product-discount">-24%</div>
+                        <button class="btn-buy">Mua ngay</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge bestseller">Bán chạy</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=400" alt="Bó hoa hồng trắng">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bó Hoa Hồng Trắng</h3>
+                        <div class="product-price">
+                            <span class="current-price">800.000đ</span>
+                        </div>
+                        <button class="btn-buy">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Themes Section -->
+    <section class="products-section themes" id="themes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Theo Chủ Đề</h2>
+                <a href="#" class="view-all">Xem tất cả →</a>
+            </div>
+            <div class="themes-grid">
+                <div class="theme-card">
+                    <div class="theme-image">
+                        <img src="https://images.unsplash.com/photo-1518895949257-8f4a6dc2974b?w=600" alt="Sinh nhật">
+                    </div>
+                    <div class="theme-content">
+                        <h3>Sinh Nhật</h3>
+                        <p>15+ sản phẩm</p>
+                    </div>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-image">
+                        <img src="https://images.unsplash.com/photo-1520763185298-1b434c919a48?w=600" alt="Tình yêu">
+                    </div>
+                    <div class="theme-content">
+                        <h3>Tình Yêu</h3>
+                        <p>20+ sản phẩm</p>
+                    </div>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-image">
+                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600" alt="Khai trương">
+                    </div>
+                    <div class="theme-content">
+                        <h3>Khai Trương</h3>
+                        <p>12+ sản phẩm</p>
+                    </div>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-image">
+                        <img src="https://images.unsplash.com/photo-1563241527-3004b6d01c85?w=600" alt="Chúc mừng">
+                    </div>
+                    <div class="theme-content">
+                        <h3>Chúc Mừng</h3>
+                        <p>18+ sản phẩm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Hoa Việt</h3>
+                    <p>Chuyên cung cấp hoa tươi cao cấp với chất lượng tốt nhất. Trao gửi yêu thương qua từng cánh hoa.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Zalo">ZL</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Về chúng tôi</h4>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Hỗ trợ</h4>
+                    <ul>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                        <li><a href="#">Vận chuyển</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li>📞 Hotline: 1900 1234</li>
+                        <li>📧 Email: info@hoaviet.com</li>
+                        <li>📍 Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</li>
+                        <li>🕒 Giờ làm việc: 8:00 - 22:00 (Tất cả các ngày)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hoa Việt. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
